@@ -1,0 +1,8 @@
+# Filtrando arquivos temporarios do Vim
+*.swp
+
+# Arquivos compilados
+*.pyc
+
+# Banco de dados de teste
+embriaodb.db
