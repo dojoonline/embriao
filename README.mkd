@@ -1,0 +1,8 @@
+# Embrião - Blog desenvolvido para o Dojo Online
+
+Embrião é um blog desenvolvido pelos participantes do Dojo Online, um projeto vindo das várias idéias do Hora Extra. Ele é um blog básico, contendo funcionalidades simples: 
+
+- Cadastro de Posts;
+- Tags;
+- Gerenciamento de Usuários;
+- Acesso Administrativo.
