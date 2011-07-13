@@ -37,7 +37,7 @@ $ mkvirtualenv EMBRIAO
 (EMBRIAO) EMBRIAO$ cd embriao
 (EMBRIAO) EMBRIAO/embriao$ pip install -r requeriments.txt
 ```
-Isso vai fazer com pip encontre as dependências no arquivo e sua respectiva versão.
+Isso vai fazer com que pip encontre as dependências no arquivo e sua respectiva versão.
 
 5. Terminado de instalar as dependências, é só criar o banco de dados e levantar o servidor:
 
