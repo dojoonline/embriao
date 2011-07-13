@@ -1,0 +1,10 @@
+<html>
+    <body>
+        <head><title>Embriao</title></head>
+        <h1>Embriao</h1>
+        {% for artigo in latest %}
+            <h2>{{ artigo.titulo }}</h2>
+            {{ artigo.conteudo }}
+        {% endfor %}
+    </body>
+</html>
