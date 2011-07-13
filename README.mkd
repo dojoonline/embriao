@@ -6,3 +6,42 @@ Embrião é um blog desenvolvido pelos participantes do Dojo Online, um projeto 
 - Tags;
 - Gerenciamento de Usuários;
 - Acesso Administrativo.
+
+## Instalando o projeto para desenvolvimento
+
+Siga os passos abaixo:
+
+1. Faça a instalação do virtualenv e virtualenvwrapper para criar o ambiente isolado do projeto. Isso evita instalar pacotes desnecessários no seu sistema operacional, e que pode prejudicar o seu funcionamento:
+
+```bash
+$ sudo pip install virtualenv virtualenvwrapper
+```
+
+2. Crie o ambiente isolado para o seu projeto:
+
+```bash
+$ mkvirtualenv EMBRIAO
+```
+**Obs.: O nome do ambiente pode ser o que você quiser!**
+
+3. Ao criar o ambiente, automaticamente ele é ativado, com isso qualquer tipo de instalação usando o pip vai ser dentro da pasta criada, ou seja a pasta *EMBRIAO*. Agora entre na pasta e faça o clone do projeto:
+
+```bash
+(EMBRIAO) $ cd EMBRIAO
+(EMBRIAO) EMBRIAO$ git clone git@github.com:dojoonline/embriao.git
+```
+
+4. Espere um momentinho para fazer o download do projeto. Terminado, entre na pasta embriao e instale as dependências do projeto dessa forma:
+
+```bash
+(EMBRIAO) EMBRIAO$ cd embriao
+(EMBRIAO) EMBRIAO/embriao$ pip install -r requeriments.txt
+```
+Isso vai fazer com pip encontre as dependências no arquivo e sua respectiva versão.
+
+5. Terminado de instalar as dependências, é só criar o banco de dados e levantar o servidor:
+
+```bash
+(EMBRIAO) EMBRIAO/embriao$ python manage.py syncdb
+(EMBRIAO) EMBRIAO/embriao$ python manage.py runserver
+```
