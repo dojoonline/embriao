@@ -1,0 +1,2 @@
+# Aplicacoes necessarias para funcionamento do projeto
+django==1.3
