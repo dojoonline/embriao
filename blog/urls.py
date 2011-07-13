@@ -7,4 +7,5 @@ urlpatterns = patterns('',
     (r'artigos', 'django.views.generic.date_based.archive_index',
         {'queryset': Artigo.objects.all(),
             'date_field': 'publicacao'}),
+    (r'^artigo/(?P<artigo_id>\d+)/$', 'blog.views.artigo'),
 )

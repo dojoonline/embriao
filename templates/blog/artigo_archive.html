@@ -3,8 +3,7 @@
         <head><title>Embriao</title></head>
         <h1>Embriao</h1>
         {% for artigo in latest %}
-            <h2>{{ artigo.titulo }}</h2>
-            {{ artigo.conteudo }}
+            <h2><a href="{% url blog.views.artigo artigo.id %}" >{{ artigo.titulo }}</a></h2>
         {% endfor %}
     </body>
 </html>
