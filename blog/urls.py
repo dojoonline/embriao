@@ -9,3 +9,4 @@ urlpatterns = patterns('',
             'date_field': 'publicacao'}),
     (r'^artigo/(?P<artigo_id>\d+)/$', 'blog.views.artigo'),
 )
+
